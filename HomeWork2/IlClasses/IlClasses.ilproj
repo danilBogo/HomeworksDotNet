@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk.IL">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
+        <MicrosoftNetCoreIlasmPackageVersion>6.0.0</MicrosoftNetCoreIlasmPackageVersion>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
         <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     </PropertyGroup>
 	
