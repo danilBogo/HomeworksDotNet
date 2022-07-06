@@ -1,17 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.IL">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
-        <MicrosoftNetCoreIlasmPackageVersion>6.0.0</MicrosoftNetCoreIlasmPackageVersion>
-        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
-        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+        <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
-	
-	<ItemGroup>
-		<Compile Include="Assembly.il" />
-		<Compile Include="CalculatorOperation.il" />
-		<Compile Include="Parser.il" />
-		<Compile Include="Message.il" />
-		<Compile Include="Calculator.il" />
-	</ItemGroup>
+
 </Project>
