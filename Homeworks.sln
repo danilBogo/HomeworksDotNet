@@ -1,8 +1,35 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork2", "HomeWork2", "{1580DEA2-343F-4EAA-B7C5-40BE05D01B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "HomeWork2\ConsoleApp\ConsoleApp.csproj", "{8360FCB6-F6B6-416C-94FB-9E28ED45B98B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IlClasses", "HomeWork2\IlClasses\IlClasses.ilproj", "{79278B56-E8EC-44B7-B6C1-DDE02DF905CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw2Tests", "HomeWork2\Hw2Tests\Hw2Tests.csproj", "{A4B39CC7-71C6-4100-AC11-97920A58E3EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8360FCB6-F6B6-416C-94FB-9E28ED45B98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8360FCB6-F6B6-416C-94FB-9E28ED45B98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8360FCB6-F6B6-416C-94FB-9E28ED45B98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8360FCB6-F6B6-416C-94FB-9E28ED45B98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79278B56-E8EC-44B7-B6C1-DDE02DF905CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79278B56-E8EC-44B7-B6C1-DDE02DF905CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79278B56-E8EC-44B7-B6C1-DDE02DF905CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79278B56-E8EC-44B7-B6C1-DDE02DF905CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B39CC7-71C6-4100-AC11-97920A58E3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B39CC7-71C6-4100-AC11-97920A58E3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B39CC7-71C6-4100-AC11-97920A58E3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B39CC7-71C6-4100-AC11-97920A58E3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8360FCB6-F6B6-416C-94FB-9E28ED45B98B} = {1580DEA2-343F-4EAA-B7C5-40BE05D01B62}
+		{79278B56-E8EC-44B7-B6C1-DDE02DF905CA} = {1580DEA2-343F-4EAA-B7C5-40BE05D01B62}
+		{A4B39CC7-71C6-4100-AC11-97920A58E3EE} = {1580DEA2-343F-4EAA-B7C5-40BE05D01B62}
 	EndGlobalSection
 EndGlobal
