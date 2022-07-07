@@ -24,7 +24,7 @@ namespace Hw2Tests
         [Fact]
         public void TestHello()
         {
-            Assert.Equal(1, Hello.Test());
+            Assert.Equal(228, Hello.Test());
         }
 
         // [Fact]
