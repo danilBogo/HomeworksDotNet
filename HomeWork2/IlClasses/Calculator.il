@@ -23,7 +23,7 @@
     switch (sum, substraction, multiplication, division)
     
     sum: add ret
-    substraction: sub ret
+    substraction: add ret
     multiplication: mul ret
     division: div ret
   }
