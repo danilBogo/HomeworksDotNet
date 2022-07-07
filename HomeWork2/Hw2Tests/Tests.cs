@@ -21,6 +21,12 @@ namespace Hw2Tests
             Assert.Equal(0, Calculator.Calculate(0, CalculatorOperation.Divide, 10));
         }
 
+        [Fact]
+        public void TestHello()
+        {
+            Assert.Equal(1, Hello.Test());
+        }
+
         // [Fact]
         // public void TestDividingZeroByNonZeroValue()
         // {
