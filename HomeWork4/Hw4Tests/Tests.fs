@@ -1,7 +1,7 @@
 module Tests.Tests
 
 open System
-open Homework4
+open ConsoleApp
 open Xunit
         
 [<Theory>]
@@ -10,9 +10,18 @@ open Xunit
 [<InlineData(15, 5, CalculatorOperation.Multiply, 75)>]
 [<InlineData(15, 5, CalculatorOperation.Divide, 3)>]
 let ``TestAllOperations`` (value1, value2, operation, expectedValue) =
-    let result = Calculator.calculate value1 operation value2
-    Assert.Equal(expectedValue, result)
+    Assert.Equal(expectedValue, Calculator.calculate value1 operation value2)
     
 [<Fact>]
-let ``TestDividingByZero`` () =
-    Assert.Throws<DivideByZeroException>(fun _ -> Calculator.calculate 15 CalculatorOperation.Divide 0 |> ignore) 
+let ``TestDividingNonZeroByZero`` () =
+    Assert.Equal(0 |> double, Calculator.calculate 0 CalculatorOperation.Divide 10)
+    
+[<Fact>]
+let ``TestDividingZeroByNonZero`` () =
+    Assert.Equal(Double.PositiveInfinity, Calculator.calculate 10 CalculatorOperation.Divide 0)
+    
+[<Fact>]
+let ``TestDividingZeroByZero`` () =
+    Assert.Equal(Double.NaN, Calculator.calculate 0 CalculatorOperation.Divide 0)
+    
+

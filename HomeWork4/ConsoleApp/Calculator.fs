@@ -1,15 +1,8 @@
-﻿module Homework4.Calculator
+﻿module ConsoleApp.Calculator
 
-open System
-open Homework4
-
-let calculate value1 operation value2 =
-    let value1d = value1 |> double
-    let value2d = value2 |> double
-    if value2d = 0 && operation = CalculatorOperation.Divide then
-        DivideByZeroException() |> raise
+let calculate (value1 : double) (operation : CalculatorOperation) (value2 : double) =
     match operation with
-    | CalculatorOperation.Plus -> value1d + value2d
-    | CalculatorOperation.Minus -> value1d - value2d
-    | CalculatorOperation.Multiply -> value1d  * value2d
-    | CalculatorOperation.Divide -> value1d / value2d
+    | CalculatorOperation.Plus -> value1 + value2
+    | CalculatorOperation.Minus -> value1 - value2
+    | CalculatorOperation.Multiply -> value1  * value2
+    | CalculatorOperation.Divide -> value1 / value2
