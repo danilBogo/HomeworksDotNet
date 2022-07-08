@@ -22,21 +22,15 @@ namespace Hw2Tests
         }
 
         [Fact]
-        public void TestHello()
+        public void TestDividingZeroByNonZeroValue()
         {
-            Assert.Equal(228, Hello.Test());
+            Assert.Equal(double.PositiveInfinity, Calculator.Calculate(10, CalculatorOperation.Divide, 0));
         }
-
-        // [Fact]
-        // public void TestDividingZeroByNonZeroValue()
-        // {
-        //     Assert.Throws<DivideByZeroException>(() => Calculator.Calculate(10, CalculatorOperation.Divide, 0));
-        // }
-        //
-        // [Fact]
-        // public void TestDividingZeroByZero()
-        // {
-        //     Assert.Throws<DivideByZeroException>(() => Calculator.Calculate(0, CalculatorOperation.Divide, 0));
-        // }
+        
+        [Fact]
+        public void TestDividingZeroByZero()
+        {
+            Assert.Equal(double.NaN, Calculator.Calculate(0, CalculatorOperation.Divide, 0));
+        }
     }
 }
